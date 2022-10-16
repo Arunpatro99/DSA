@@ -4,6 +4,9 @@
  * pop
  * peek
 */
+/* import java.util.*;  
+The type stack is not generic, it cannot be parameterized with argements 
+*/
 import java.util.Stack;
 public class StackImplementationn {
     public static void main(String args[]) {
