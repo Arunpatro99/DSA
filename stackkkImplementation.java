@@ -4,7 +4,7 @@
  * pop
  * peek
 */
-public class stackkkImplemetation {
+public class stackkkImplementation {
     static class Node{
         int data;
         Node next;
