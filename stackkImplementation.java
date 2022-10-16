@@ -1,3 +1,9 @@
+/* Stack Implementation through ArrayList
+ * operation performed 
+ * push
+ * pop
+ * peek
+*/
 import java.util.*;
 
 public class stackkImplementation {
