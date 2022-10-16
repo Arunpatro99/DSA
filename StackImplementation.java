@@ -1,3 +1,9 @@
+/* Stack Implementation through Array
+ * operation performed 
+ * push
+ * pop
+ * peek
+*/
 import java.util.*;
 
 class Stack {
