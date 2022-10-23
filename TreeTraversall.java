@@ -14,7 +14,7 @@
  * right subtree
  * root
  */
-public class TreeTraversal {
+public class TreeTraversall {
     static class Node {
         int data;
         Node left;
