@@ -1,11 +1,10 @@
 /*
- * PreOrder Tree traversal Time complexity= O(n)
- * Root                     
- * Left subtree
+ * PostOrder Tree traversal Time complexity=O(n)
+ * Left subtree                   
  * right subtree
+ * root
  */
-
-public class PreOrderTraversal {
+public class PostOrderTraversal {
     static class Node {
         int data;
         Node left;
@@ -35,29 +34,29 @@ public class PreOrderTraversal {
             return newNode;
         }
     }
-    //PreOder Tree traversal
-    public static void preorder(Node root) {
+
+    // PostOrder Tree traversal
+    public static void postorder(Node root) {
         if (root == null) {
             return;
         }
-        System.out.println(root.data + "  ");
-        preorder(root.left);
-        preorder(root.right);
+        postorder(root.left);
+        postorder(root.right);
+        System.out.println(root.data + " ");
     }
 
     public static void main(String args[]) {
-        // PreOrder
         // -1 represents null
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildtree(nodes);
         /*
-         * PreOrder
-         * first=root
-         * then left subtree
-         * then rigth subtree
+         * PostOrder
+         * left subtree
+         * rigth subtree
+         * root
          */
-        preorder(root);
+        postorder(root);
 
     }
 }
